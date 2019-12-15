@@ -1,15 +1,21 @@
+let welcome = $("#welcome");
+let bioDiv = $(".bioDiv");
+let portfolioDiv = $(".portfolioDiv");
+let contactDiv = $(".contactDiv");
 
-var i = 0;
-$(window).scroll(function(event){
+var i = 100;
+$(window).scroll(function (event) {
    var st = $(this).scrollTop();
-   if (st > i){
-       // downscroll code
-       i -= 1;
-       console.log(i)
-   } else {
+   console.log(st);
+   if (st < i) {
+      // downscroll code
+      console.log("down")
+      welcome.removeAttr("hidden", "true");
+      welcome.attr("class", "container pl-0 pr-0 img-container animated fadeInUp");
+   } else if (st > i) {
       // upscroll code
-      i += 1;
-      console.log(i)
-   }
-   i = st;
+      console.log("up");
+      welcome.attr("class", "container pl-0 pr-0 img-container animated fadeOutUp");
+      //welcome.attr("hidden", "true");
+   };
 });

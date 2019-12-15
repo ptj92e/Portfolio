@@ -14,6 +14,10 @@ header {
     height: 100px;
     width: 100px;
 }
+.navbar {
+    background: white;
+
+}
 .linkText {
     color: #6f9ca6;
 }
