@@ -61,10 +61,10 @@ header {
     width: 250px;
 }
 #portfolioItem {
-    background-color: #3F4C71;
-    color: white
+    background-color: rgba(63, 76, 113, 0.4);
+    color: white;;
 }
 #contactItem {
-    background-color: #3F4C71;
+    background-color: rgba(63, 76, 113, 0.4);
     color: white;
 }
