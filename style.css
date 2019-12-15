@@ -17,7 +17,7 @@ header {
 .linkText {
     color: #6f9ca6;
 }
-.linkText: hover {
+.linkText:hover {
     color: #182955;
 }
 .img-container {
