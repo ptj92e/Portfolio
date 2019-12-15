@@ -26,10 +26,10 @@ header {
     margin-top: 125px;
 }
 .bioDiv {
-    
+    margin-top: 75px;
 }
 .portfolioDiv {
-    
+    margin-top: 75px;
 }
 #profileImage {
     height: 25vh;
@@ -39,7 +39,7 @@ header {
     font-size: 3vh;
 }
 .contactDiv {
-    
+    margin-top: 75px;
 }
 .dark-cover {
     font-size: 2vw;
