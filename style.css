@@ -1,7 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(white, #182955);
+    background: linear-gradient(white 40%, #182955) no-repeat center center fixed;;
+    background-size: 100vmax;
 }
 header {
     position: fixed;
@@ -13,23 +14,32 @@ header {
     height: 100px;
     width: 100px;
 }
+.linkText {
+    color: #6f9ca6;
+}
+.linkText: hover {
+    color: #182955;
+}
 .img-container {
-    background-image: url("assets/images/polygon.jpg");
-    background-size: cover;
     text-align: center;
     opacity: 1.0;
     margin-top: 125px;
-    border-style: solid;
-    border-color: black;
 }
 .bioDiv {
-    border-style: solid;
+    
 }
 .portfolioDiv {
-    border-style: solid;
+    
+}
+#profileImage {
+    height: 25vh;
+    width: 25vh;
+}
+.bioText {
+    font-size: 3vh;
 }
 .contactDiv {
-    border-style: solid;
+    
 }
 .dark-cover {
     font-size: 2vw;
@@ -37,19 +47,24 @@ header {
     padding: 10px;
     text-transform: uppercase;
     color: black;
-    background-color: white;
-    mix-blend-mode: screen;
+    mix-blend-mode: exclusion;
 }
 .dark-cover-name {
     font-size: 6vw;
     font-weight: bold;
     padding: 10px;
     text-transform: uppercase;
-    color: black;
-    background-color: white;
-    mix-blend-mode: screen;
+    mix-blend-mode: exclusion;
 }
 .portfolioImg {
     height: 150px;
     width: 250px;
+}
+#portfolioItem {
+    background-color: #3F4C71;
+    color: white
+}
+#contactItem {
+    background-color: #3F4C71;
+    color: white;
 }

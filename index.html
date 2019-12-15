@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/png" href="assets/images/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -19,55 +20,59 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link text-secondary" href="#">Bio</a>
+                        <a class="nav-link linkText" href="#">Bio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link ml-2 mr-2 text-secondary" href="#">Portfolio</a>
+                        <a class="nav-link ml-2 mr-2 linkText" href="#">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-secondary" href="#">Contact</a>
+                        <a class="nav-link linkText" href="#">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
     <br>
-    <div class="container pl-0 pr-0 img-container">
+    <div class="container pl-0 pr-0 img-container animated fadeInUp">
         <div class="dark-cover">My name is</div>
         <div class="dark-cover-name">Phillip Jones</div>
         <div class="dark-cover">I am an aspiring full stack web developer.</div>
         <div class="dark-cover">Welcome to my portfolio.</div>
     </div>
     <br>
-    <div class="container bioDiv">
-        <h2 class="text-center text-secondary mb-3">Bio</h2>
+    <div class="container bioDiv" hidden>
+        <h2 class="text-center mb-3">Bio</h2>
         <div class="col-12 border-top-secondary">
-            <img class="col-sm-12 col-md-7 col-lg-3 float-left" alt="Phillip Jones"
-                src="assets/images/Phillip_Jones.jpg">
-            <p class="text-secondary">My name is Phillip Jones and I live in Hendersonville, TN. I am currently in
-                my second year as a music educator teaching band, choir, and general music at Shafer Middle School
-                in Gallatin, TN. Through my love of music, I decided to become an educator to hopefully pass on the
-                love of music I have to the future generations. Students I have taught have gone on to make regional
-                honor bands, earn scholarships for summer music camps, and even earn scholarships to play music in
-                college. I LOVE marching band and I am very proud of the hard work of my current and past students.
-                Some of their accomplishments include making finals at Bands of America regional competitions, and
-                even winning Tennessee Division II State Champions two years in a row.<br><br>
-                My instrument of choice is Trombone, but I also play Euphonium and Tuba from time to time. I
-                have played with different professional groups such as the Intersection Music Ensemble and the
-                Nashville Opera. Of course, like a lot of musicians, I also consider guitar a hobby that I really
-                enjoy. I love metal music and it is what drove me to want to teach myself how to play guitar. It is
-                fulfilling for me to be able to play the music I enjoy even if I never play for an audience.<br><br>
-                Unfortunately, teaching is very stressful and it has taken away all of the joy I find in music.
-                Through talking with my wife, we decided that it would be a great time for me to rethink my career
-                decisions and I think that web development would be a great opportunity for me to not only feel
-                accomplished in the work I do, but to hopefully regain some of the love of music I have lost.</p>
+            <img class="float-left mr-2" alt="Phillip Jones" id="profileImage" src="assets/images/Phillip_Jones.jpg">
+            <p class="bioText">My name is Phillip Jones and I live in Hendersonville, TN. I am an aspiring full
+                stack web developer currently enrolled in the Vanderbilt Coding Bootcamp. My passion for web development
+                has come from over a decade of music education where I learned a strong work ethic and creative problem
+                solving. I love music, but I am looking for a more consistent outlet for my creativity.<br><br>
+                Prior to enrolling in the Vanderbilt Coding Bootcamp, I went to Middle Tennessee State University as a
+                Music Education Major and I am currently in my second full year as a Band Director. Being in education
+                has taught me how to break down situations, reassess them, and approach them with patience.</p>
+                <h4 class="text-center">Skills Include</h4>
+            <div class="row flex-row justify-content-center">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+                <ul>
+                    <li>Bootstrap</li>
+                    <li>Animate.CSS</li>
+                </ul>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>JQuery</li>
+                </ul>
+            </div>
         </div>
     </div>
     <br>
-    <div class="container portfolioDiv">
-        <h2 class="text-center text-secondary mb-3">Portfolio</h2>
+    <div class="container portfolioDiv" hidden>
+        <h2 class="text-center mb-3">Portfolio</h2>
         <div class="row justify-content-center">
-            <div class="mx-2 px-4" id="portfolioItem">
+            <div class="mx-2 mb-4 px-4 rounded" id="portfolioItem">
                 <img class="portfolioImg mt-3 justify-content-center" src="assets/images/Got-Jobs.png">
                 <h3 class="text-center">Got Jobs?</h3>
                 <div class="row justify-content-center">
@@ -77,7 +82,7 @@
                     <p>GitHub: <a href="https://github.com/ptj92e/GotJobs">Got Jobs?</a></p>
                 </div>
             </div>
-            <div class="mx-2 px-4" id="portfolioItem">
+            <div class="mx-2 mb-4 px-4 rounded" id="portfolioItem">
                 <img class="portfolioImg mt-3 justify-content-center" src="assets/images/Weather.png">
                 <h3 class="text-center">Weather Dashboard</h3>
                 <div class="row justify-content-center">
@@ -87,7 +92,7 @@
                     <p>GitHub: <a href="https://github.com/ptj92e/Weather-Dashboard">Weather Dashboard</a></p>
                 </div>
             </div>
-            <div class="mx-2 px-4" id="portfolioItem">
+            <div class="mx-2 mb-4 px-4 rounded" id="portfolioItem">
                 <img class="portfolioImg mt-3 justify-content-center" src="assets/images/Work.png">
                 <h3 class="text-center">Work Day Scheduler</h3>
                 <div class="row justify-content-center">
@@ -100,17 +105,17 @@
         </div>
     </div>
     <br>
-    <div class="container contactDiv">
-        <h2 class="text-center text-secondary mb-3">Portfolio</h2>
+    <div class="container contactDiv" hidden>
+        <h2 class="text-center mb-3">Contact</h2>
         <div class="row justify-content-center">
-            <div class="mx-2 px-4" id="portfolioItem">
+            <div class="mx-2 mb-4 px-4 rounded" id="contactItem">
                 <h3 class="text-center">Resume</h3>
                 <div class="row justify-content-center">
                     <p>Resume</p>
                 </div>
             </div>
-            <div class="mx-2 px-4" id="portfolioItem">
-                <h3 class="text-center">Contact Mr</h3>
+            <div class="mx-2 mb-4 px-4 rounded" id="contactItem">
+                <h3 class="text-center">Contact Me</h3>
                 <div class="row justify-content-center">
                     <p>E-Mail: <a>ptj92e@gmail.com</a></p>
                 </div>
@@ -118,10 +123,10 @@
                     <p>Phone: <a>615-477-2263</a></p>
                 </div>
                 <div class="row justify-content-center">
-                    <p>Address: 103 Hickory Way North Hendersonville, TN, 37075</p>
+                    <p>Address: 103 Hickory Way North<br>Hendersonville, TN, 37075</p>
                 </div>
             </div>
-            <div class="mx-2 px-4" id="portfolioItem">
+            <div class="mx-2 mb-4 px-4 rounded" id="contactItem">
                 <h3 class="text-center">Social Media</h3>
                 <div class="row justify-content-center">
                     <p>Facebook: <a href="https://www.facebook.com/TrombonePhil92">Phillip Jones</a></p>
