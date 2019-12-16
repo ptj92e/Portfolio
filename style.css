@@ -33,6 +33,8 @@ h4 {
 
 }
 .linkText {
+    font-family: 'Suravaram', serif;
+    font-size: 2vw;
     color: #6f9ca6;
 }
 .linkText:hover {
