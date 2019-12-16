@@ -118,6 +118,7 @@ h4 {
     background-color: rgba(111, 156, 166, 0.4);
     color: #182955;
     box-shadow: 0 8px 6px -6px grey;
+    font-family: 'Suravaram', serif;
 }
 .portfolioImg {
     height: 150px;
@@ -138,4 +139,5 @@ h4 {
     background-color: rgba(111, 156, 166, 0.4);
     color: #182955;
     box-shadow: 0 8px 6px -6px grey;
+    font-family: 'Suravaram', serif;
 }
