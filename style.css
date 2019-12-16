@@ -99,6 +99,7 @@ h4 {
 #profileImage {
     height: 25vh;
     width: 25vh;
+    box-shadow: 0 8px 6px -6px grey;
 }
 .bioText {
     font-family: 'Suravaram', serif;
