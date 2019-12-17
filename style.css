@@ -87,10 +87,15 @@ h4 {
     transform: translateY(0);
 }
 #portfolioItem {
-    background-color: rgba(111, 156, 166, 0.4);
+    background-color: rgba(110, 156, 166, 0.4);
     color: #182955;
     box-shadow: 0 8px 6px -6px grey;
     font-family: 'Suravaram', serif;
+    transition: background-color 0.5s ease;
+}
+#portfolioItem:hover {
+    background-color: rgba(21, 41, 85, 0.4);
+    color: white;
 }
 .portfolioImg {
     height: 150px;
@@ -113,4 +118,9 @@ h4 {
     color: #182955;
     box-shadow: 0 8px 6px -6px grey;
     font-family: 'Suravaram', serif;
+    transition: background-color 0.5s ease;
+}
+#contactItem:hover {
+    background-color: rgba(21, 41, 85, 0.4);
+    color: white;
 }
