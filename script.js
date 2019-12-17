@@ -24,13 +24,4 @@ $(document).ready(function () {
    })
       .setClassToggle(".contactDiv", "fade-in")
       .addTo(controller);
-
-   function offsetAnchor() {
-      if (location.hash.length !== 0) {
-         window.scrollTo(window.scrollX, window.scrollY - 1000);
-      };
-   };
-
-   $("#bioLink").click(offsetAnchor());
-
 });
