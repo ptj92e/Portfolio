@@ -19,31 +19,31 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg animated fadeInUp">
-            <img class="navbar-brand p-0 m-0" src="assets/images/logo.png">
+            <img class="navbar-brand p-0 m-0" src="assets/images/logo.png" href="#welcome">
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link linkText" href="#">Bio</a>
+                        <a class="nav-link linkText" href="#bioDiv" id="bioLink">Bio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link ml-2 mr-2 linkText" href="#">Portfolio</a>
+                        <a class="nav-link ml-2 mr-2 linkText" href="#portfolioDiv" id="portfolioLink">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link linkText" href="#">Contact</a>
+                        <a class="nav-link linkText" href="#contactDiv" id="contactLink">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
     <br>
-    <div class="container pl-0 pr-0 img-container animated fadeInUp" id="welcome">
+    <div class="container pl-0 pr-0 welcomeDiv animated fadeInUp" id="welcome">
         <div class="dark-cover">My name is</div>
         <div class="dark-cover-name">Phillip Jones</div>
         <div class="dark-cover">I am an aspiring full stack web developer.</div>
         <div class="dark-cover">Welcome to my portfolio.</div>
     </div>
     <br>
-    <div class="container bioDiv">
+    <div class="container bioDiv" id="bioDiv">
         <h2 class="text-center mb-3">Bio</h2>
         <div class="col-12 border-top-secondary">
             <img class="float-left mr-2 rounded" alt="Phillip Jones" id="profileImage" src="assets/images/Phillip_Jones.jpg">
@@ -72,7 +72,7 @@
         </div>
     </div>
     <br>
-    <div class="container portfolioDiv">
+    <div class="container portfolioDiv" id="portfolioDiv">
         <h2 class="text-center mb-3">Portfolio</h2>
         <div class="row justify-content-center">
             <div class="mx-2 mb-4 px-4 rounded" id="portfolioItem">
@@ -108,7 +108,7 @@
         </div>
     </div>
     <br>
-    <div class="container contactDiv">
+    <div class="container contactDiv" id="contactDiv">
         <h2 class="text-center mb-3">Contact</h2>
         <div class="row justify-content-center">
             <div class="mx-2 mb-4 px-4 rounded" id="contactItem">
