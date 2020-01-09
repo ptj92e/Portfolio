@@ -24,6 +24,7 @@ h4 {
 .navbar-brand {
     height: 15vh;
     width: 15vh;
+    z-index: -2;
 }
 .linkText {
     font-family: 'Suravaram', serif;
@@ -36,7 +37,7 @@ h4 {
 .welcomeDiv {
     text-align: center;
     opacity: 1.0;
-    margin-top: 18vh;
+    margin-top: 15vh;
     color: #182955;
 }
 .dark-cover {
@@ -53,7 +54,7 @@ h4 {
     text-transform: uppercase;
 }
 .bioDiv {
-    padding-top: 20vh;
+    padding-top: 15vh;
     color: #182955;
     opacity: 0;
     transform: translateY(50px);
@@ -99,7 +100,7 @@ h4 {
     width: 36vh;
 }
 .contactDiv {
-    padding-top: 15vh;
+    padding-top: 20vh;
     padding-bottom: 15vh;
     color: #182955;
     opacity: 0;
