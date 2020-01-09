@@ -55,7 +55,6 @@ h4 {
 .bioDiv {
     padding-top: 20vh;
     height: 100vh;
-    overflow-y: scroll;
     color: #182955;
     opacity: 0;
     transform: translateY(50px);
@@ -75,9 +74,8 @@ h4 {
     font-size: 3vh;
 }
 .portfolioDiv {
-    padding-top: 20vh;
+    padding-top: 10vh;
     color: #182955;
-    margin-top: 11vh;
     opacity: 0;
     transform: translateY(50px);
     transition: all 1s ease-out;
