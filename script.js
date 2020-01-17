@@ -8,9 +8,9 @@ $(document).ready(function () {
       .addTo(controller);
 
    let bioFade = new ScrollMagic.Scene({
-      triggerElement: ".bioDiv"
+      triggerElement: ".brandDiv"
    })
-      .setClassToggle(".bioDiv", "fade-in")
+      .setClassToggle(".brandDiv", "fade-in")
       .addTo(controller);
 
    let portfolioFade = new ScrollMagic.Scene({
