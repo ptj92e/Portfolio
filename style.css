@@ -4,6 +4,11 @@ body {
     background: linear-gradient(white 40%, rgb(111, 156, 166)) no-repeat center center fixed;;
     background-size: 100vmax;
 }
+@media only screen and (max-width: 550px) {
+    body {
+      background: rgb(174, 226, 238);
+    }
+}
 header {
     position: fixed;
     top: 0;
@@ -20,6 +25,9 @@ h2 {
 h4 {
     font-family: 'Suravaram', serif;
     font-size: 40px;
+}
+a:hover {
+    color: white;
 }
 .navbar-brand {
     height: 15vh;
