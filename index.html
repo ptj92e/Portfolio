@@ -15,6 +15,12 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
     <title>PJ Design</title>
 </head>
 
@@ -84,56 +90,148 @@
     <br>
     <div class="container portfolioDiv" id="portfolioDiv">
         <h2 class="text-center mb-3">Portfolio</h2>
-        <p class="portfolioText">Here are some of the projects I have worked on. So far, on the front end, the projects utilize HTML, CSS, Bootstrap, JavaScript, JQuery, and making API calls. On the back end, I have only used Node.js and Express in some projects, and I have goals to add more languages in the future.</p>
+        <p class="portfolioText">Here are some of the projects I have worked on. So far, on the front end, the projects
+            utilize HTML, CSS, Bootstrap, JavaScript, JQuery, and making API calls. On the back end, I have only used
+            Node.js and Express in some projects, and I have goals to add more languages in the future.</p>
         <div class="js-flickity" data-flickity='{"wrapAround" : "true", "groupCells" : "true"}'>
             <div class="mx-2 mb-4 px-4 rounded" id="portfolioItem">
                 <img class="portfolioImg rounded mt-3 justify-content-center" src="assets/images/Got-Jobs.png">
                 <h3 class="text-center">Got Jobs?</h3>
-                <div class="row justify-content-center">
-                    <p>Deployed: <a href="https://ptj92e.github.io/GotJobs/">Got Jobs?</a></p>
-                </div>
-                <div class="row justify-content-center">
-                    <p>GitHub: <a href="https://github.com/ptj92e/GotJobs">Got Jobs?</a></p>
+                <div class="row justify-content-center pb-3">
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#jobsModal">See
+                        More</button>
                 </div>
             </div>
             <div class="mx-2 mb-4 px-4 rounded" id="portfolioItem">
                 <img class="portfolioImg rounded mt-3 justify-content-center" src="assets/images/Weather.png">
                 <h3 class="text-center">Weather Dashboard</h3>
-                <div class="row justify-content-center">
-                    <p>Deployed: <a href="https://ptj92e.github.io/Weather-Dashboard/">Weather Dashboard</a></p>
-                </div>
-                <div class="row justify-content-center">
-                    <p>GitHub: <a href="https://github.com/ptj92e/Weather-Dashboard">Weather Dashboard</a></p>
+                <div class="row justify-content-center pb-3">
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#weatherModal">See
+                        More</button>
                 </div>
             </div>
             <div class="mx-2 mb-4 px-4 rounded" id="portfolioItem">
                 <img class="portfolioImg rounded mt-3 justify-content-center" src="assets/images/Work.png">
                 <h3 class="text-center">Work Day Scheduler</h3>
-                <div class="row justify-content-center">
-                    <p>Deployed: <a href="https://ptj92e.github.io/To-Do-List/">Work Day Scheduler</a></p>
-                </div>
-                <div class="row justify-content-center">
-                    <p>GitHub: <a href="https://github.com/ptj92e/To-Do-List">Rock History Quiz</a></p>
+                <div class="row justify-content-center pb-3">
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#scheduleModal">See
+                        More</button>
                 </div>
             </div>
             <div class="mx-2 mb-4 px-4 rounded" id="portfolioItem">
                 <img class="portfolioImg rounded mt-3 justify-content-center" src="assets/images/RockHistoryQuiz.png">
                 <h3 class="text-center">Rock History Quiz</h3>
-                <div class="row justify-content-center">
-                    <p>Deployed: <a href="https://ptj92e.github.io/Rock-History-Quiz/">Rock History Quiz</a></p>
-                </div>
-                <div class="row justify-content-center">
-                    <p>GitHub: <a href="https://github.com/ptj92e/Rock-History-Quiz">Rock History Quiz</a></p>
+                <div class="row justify-content-center pb-3">
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#rockModal">See
+                        More</button>
                 </div>
             </div>
             <div class="mx-2 mb-4 px-4 rounded" id="portfolioItem">
                 <img class="portfolioImg rounded mt-3 justify-content-center" src="assets/images/Profile-Generator.png">
                 <h3 class="text-center">Profile Generator</h3>
-                <div class="row justify-content-center">
+                <div class="row justify-content-center pb-3">
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#profileModal">See
+                        More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="jobsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <img class="col-12 rounded mt-3 justify-content-center" src="assets/images/Got-Jobs.png">
+                    <h3 class="text-center">Got Jobs?</h3>
+                    <div class="row justify-content-center">
+                        <p>Deployed: <a href="https://ptj92e.github.io/GotJobs/">Got Jobs?</a></p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <p>GitHub: <a href="https://github.com/ptj92e/GotJobs">Got Jobs?</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="weatherModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <img class="col-12 rounded mt-3 justify-content-center" src="assets/images/Weather.png">
+                    <h3 class="text-center">Weather Dashboard</h3>
+                    <div class="row justify-content-center">
+                        <p>Deployed: <a href="https://ptj92e.github.io/Weather-Dashboard/">Weather Dashboard</a></p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <p>GitHub: <a href="https://github.com/ptj92e/Weather-Dashboard">Weather Dashboard</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="scheduleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <img class="col-12 rounded mt-3 justify-content-center" src="assets/images/Work.png">
+                    <h3 class="text-center">Work Day Scheduler</h3>
+                    <div class="row justify-content-center">
+                        <p>Deployed: <a href="https://ptj92e.github.io/To-Do-List/">Work Day Scheduler</a></p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <p>GitHub: <a href="https://github.com/ptj92e/To-Do-List">Rock History Quiz</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="rockModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <img class="col-12 rounded mt-3 justify-content-center" src="assets/images/RockHistoryQuiz.png">
+                    <h3 class="text-center">Rock History Quiz</h3>
+                    <div class="row justify-content-center">
+                        <p>Deployed: <a href="https://ptj92e.github.io/Rock-History-Quiz/">Rock History Quiz</a></p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <p>GitHub: <a href="https://github.com/ptj92e/Rock-History-Quiz">Rock History Quiz</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <img class="col-12 rounded mt-3 justify-content-center" src="assets/images/Profile-Generator.png">
+                    <h3 class="text-center">Profile Generator</h3>
+                    <div class="row justify-content-center">
                         <p>Please visit GitHub to see application.</p>
                     </div>
-                <div class="row justify-content-center">
-                    <p>GitHub: <a href="https://github.com/ptj92e/Profile-Generator">Profile Generator</a></p>
+                    <div class="row justify-content-center">
+                        <p>GitHub: <a href="https://github.com/ptj92e/Profile-Generator">Profile Generator</a></p>
+                    </div>
                 </div>
             </div>
         </div>

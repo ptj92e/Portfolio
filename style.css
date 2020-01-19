@@ -113,6 +113,13 @@ a:hover {
       background: white;
     }
 }
+.modal-body {
+    background-color: rgba(21, 41, 85, 0.4);
+    color: white;
+}
+#profileModal .modal-dialog .modal-content .modal-body img {
+    height: 300px;
+}
 .portfolioImg {
     height: 25vh;
     width: 36vh;
