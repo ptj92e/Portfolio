@@ -6,7 +6,7 @@ body {
 }
 @media only screen and (max-width: 550px) {
     body {
-      background: rgb(174, 226, 238);
+      background: rgb(238, 245, 247);
     }
 }
 header {
@@ -37,10 +37,23 @@ a:hover {
 .linkText:hover {
     color: #182955;
 }
+@media only screen and (max-width: 550px) {
+    .navbar {
+       background-color: rgb(238, 245, 247); 
+    }
+    .linkText {
+        font-family: 'Suravaram', serif;
+        font-size: 20px;
+        color: #182955;
+    }
+    .linkText:hover {
+        color: #6f9ca6;
+    }
+}
 .welcomeDiv {
     text-align: center;
     opacity: 1.0;
-    margin-top: 15vh;
+    margin-top: 25vh;
     color: #182955;
 }
 .dark-cover {

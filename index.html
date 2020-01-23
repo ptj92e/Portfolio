@@ -26,24 +26,10 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg animated fadeInUp">
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link linkText" href="#brandDiv" id="brandLink">Brand</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link ml-2 mr-2 linkText" href="#portfolioDiv" id="portfolioLink">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link linkText" href="#contactDiv" id="contactLink">Contact</a>
-                    </li>
-                </ul>
-            </div>
+        <nav class="navbar justify-content-center">
+            <a class="nav-link linkText" href="#brandDiv" id="brandLink">Brand</a>
+            <a class="nav-link ml-2 mr-2 linkText" href="#portfolioDiv" id="portfolioLink">Portfolio</a>
+            <a class="nav-link linkText" href="#contactDiv" id="contactLink">Contact</a>
         </nav>
     </header>
     <br>
@@ -58,18 +44,27 @@
         <div class="row">
             <div class="col-12 border-top-secondary">
                 <div class="col-12">
-                    <img class="float-left mr-2 rounded" alt="Phillip Jones" id="profileImage"
-                        src="assets/images/Phillip_Jones.jpg">
-                    <p class="brandText">Full-Stack Web Developer utilizing a background in music education to provide a
-                        more well rounded addition to any team. Currently working on a certificate for Full Stack Web
-                        Development from the Vanderbilt University Coding Bootcamp with skills in HTML, CSS, JavaScript,
-                        JQuery, Node.js, and responsive web design. Known as a patient problem-solver passionate about a
-                        responsive user experience, and clear team communication. With a focus on user interface, I
-                        recently worked with a team of 3 to finish a job search website that is mobile responsive and
-                        pulls information from multiple APIs to present the user with jobs, a map of the city where the
-                        job is located, and quality of life information for the city that is searched. Motivated to
-                        utilize skills in the future as a part of a cohesive working unit developing quality websites
-                        and apps focused on user experience.</p>
+                    <div class="row justify-content-center">
+                        <p class="brandText">Full-Stack Web Developer utilizing a background in music
+                            education to provide a
+                            more well rounded addition to any team. Currently working on a certificate for Full Stack
+                            Web
+                            Development from the Vanderbilt University Coding Bootcamp with skills in HTML, CSS,
+                            JavaScript,
+                            JQuery, Node.js, and responsive web design. Known as a patient problem-solver passionate
+                            about a
+                            responsive user experience, and clear team communication. With a focus on user interface, I
+                            recently worked with a team of 3 to finish a job search website that is mobile responsive
+                            and
+                            pulls information from multiple APIs to present the user with jobs, a map of the city where
+                            the
+                            job is located, and quality of life information for the city that is searched. Motivated to
+                            utilize skills in the future as a part of a cohesive working unit developing quality
+                            websites
+                            and apps focused on user experience.</p>
+
+
+                    </div>
                 </div>
                 <div class="col-12">
                     <h4 class="text-center">Skills Include</h4>
@@ -150,7 +145,11 @@
                 <div class="modal-body">
                     <img class="col-12 rounded mt-3 justify-content-center" src="assets/images/Got-Jobs.png">
                     <h3 class="text-center">Got Jobs?</h3>
-                    <p class="portfolioText">This is a webpage that I created with a team of 2 others. We used Bootstrap as our visual framework and features a fully responsive design. We modified it with our own class system for the styling. For the functionality, we used JQuery as well as a few API calls to retrieve information. We used The Muse, Teleport, and the Mapquest APIs for this app. We also used the third party API Plotly.js to create the table for the Teleport information.</p>
+                    <p class="portfolioText">This is a webpage that I created with a team of 2 others. We used Bootstrap
+                        as our visual framework and features a fully responsive design. We modified it with our own
+                        class system for the styling. For the functionality, we used JQuery as well as a few API calls
+                        to retrieve information. We used The Muse, Teleport, and the Mapquest APIs for this app. We also
+                        used the third party API Plotly.js to create the table for the Teleport information.</p>
                     <div class="row justify-content-center">
                         <p>Deployed: <a href="https://ptj92e.github.io/GotJobs/">Got Jobs?</a></p>
                     </div>
@@ -171,7 +170,12 @@
                 <div class="modal-body">
                     <img class="col-12 rounded mt-3 justify-content-center" src="assets/images/Weather.png">
                     <h3 class="text-center">Weather Dashboard</h3>
-                    <p class="portfolioText">I created this app as part of an assignment in my bootcamp. This app utilizes Bootstrap for a fully responsive mobile experience. For functionality, I used JQuery to send information to the Openweather API. The user can search for a city and the page will populate with current weather information and a 5 day forecast. When the page loads, the app will also use the user's geolocation to pull up weather information for where the user is located.</p>
+                    <p class="portfolioText">I created this app as part of an assignment in my bootcamp. This app
+                        utilizes Bootstrap for a fully responsive mobile experience. For functionality, I used JQuery to
+                        send information to the Openweather API. The user can search for a city and the page will
+                        populate with current weather information and a 5 day forecast. When the page loads, the app
+                        will also use the user's geolocation to pull up weather information for where the user is
+                        located.</p>
                     <div class="row justify-content-center">
                         <p>Deployed: <a href="https://ptj92e.github.io/Weather-Dashboard/">Weather Dashboard</a></p>
                     </div>
@@ -192,7 +196,11 @@
                 <div class="modal-body">
                     <img class="col-12 rounded mt-3 justify-content-center" src="assets/images/Work.png">
                     <h3 class="text-center">Work Day Scheduler</h3>
-                    <p class="portfolioText">This app I created is great for keeping up with tasks during the workday. This app uses the third party API Moment.js to keep track of the time of day. The color of the time block changes throughout the day depending on the time provided by the Moment.js API. Once the user inputs a task for a certain time of day, they can click on the save button and save their task to the local storage and can be accessed even when the page is reloaded.</p>
+                    <p class="portfolioText">This app I created is great for keeping up with tasks during the workday.
+                        This app uses the third party API Moment.js to keep track of the time of day. The color of the
+                        time block changes throughout the day depending on the time provided by the Moment.js API. Once
+                        the user inputs a task for a certain time of day, they can click on the save button and save
+                        their task to the local storage and can be accessed even when the page is reloaded.</p>
                     <div class="row justify-content-center">
                         <p>Deployed: <a href="https://ptj92e.github.io/To-Do-List/">Work Day Scheduler</a></p>
                     </div>
@@ -213,7 +221,13 @@
                 <div class="modal-body">
                     <img class="col-12 rounded mt-3 justify-content-center" src="assets/images/RockHistoryQuiz.png">
                     <h3 class="text-center">Rock History Quiz</h3>
-                    <p class="portfolioText">I created a quiz that uses JQuery for the functionality. Once the quiz button is clicked, the program hides elements and populates the first question and answer choices on the screen. Each answer choice is associated with a data attribute that, when clicked, is checked against the correct answer. If the correct answer is clicked, the user's score goes up and the next question fills the space. If not, there is a time penalty and the question still changes. Once the quiz is over, the user inputs their name and is redirected to a score page which displays the user's score.</p>
+                    <p class="portfolioText">I created a quiz that uses JQuery for the functionality. Once the quiz
+                        button is clicked, the program hides elements and populates the first question and answer
+                        choices on the screen. Each answer choice is associated with a data attribute that, when
+                        clicked, is checked against the correct answer. If the correct answer is clicked, the user's
+                        score goes up and the next question fills the space. If not, there is a time penalty and the
+                        question still changes. Once the quiz is over, the user inputs their name and is redirected to a
+                        score page which displays the user's score.</p>
                     <div class="row justify-content-center">
                         <p>Deployed: <a href="https://ptj92e.github.io/Rock-History-Quiz/">Rock History Quiz</a></p>
                     </div>
@@ -234,7 +248,9 @@
                 <div class="modal-body">
                     <img class="col-12 rounded mt-3 justify-content-center" src="assets/images/Profile-Generator.png">
                     <h3 class="text-center">Profile Generator</h3>
-                    <p class="portfolioText">This is a Node application that I created that uses Inquirer to prompt the user for their GitHub username and favorite color. Once those two answers are given, a PDF of information from GitHub is created and can be used as a quick resume reference.</p>
+                    <p class="portfolioText">This is a Node application that I created that uses Inquirer to prompt the
+                        user for their GitHub username and favorite color. Once those two answers are given, a PDF of
+                        information from GitHub is created and can be used as a quick resume reference.</p>
                     <div class="row justify-content-center">
                         <p>Please visit GitHub to see application.</p>
                     </div>
@@ -279,10 +295,10 @@
                     <p>LinkedIn: <a href="https://www.linkedin.com/in/phillip-jones-4122a7156/">Phillip Jones</a></p>
                 </div>
                 <div class="row justify-content-center">
-                    <p>Facebook: <a href="https://www.facebook.com/TrombonePhil92">Phillip Jones</a></p>
+                    <p>Facebook: <a href="https://www.facebook.com/TrombonePhil92">Facebook</a></p>
                 </div>
                 <div class="row justify-content-center">
-                    <p>Twitter: <a href="https://twitter.com/TrombonePhil92">Phillip Jones</a></p>
+                    <p>Twitter: <a href="https://twitter.com/TrombonePhil92">Twitter</a></p>
                 </div>
             </div>
         </div>
