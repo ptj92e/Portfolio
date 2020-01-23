@@ -37,6 +37,9 @@ a:hover {
 .linkText:hover {
     color: #182955;
 }
+.navbar {
+    background-color: white; 
+ }
 @media only screen and (max-width: 550px) {
     .navbar {
        background-color: rgb(238, 245, 247); 
