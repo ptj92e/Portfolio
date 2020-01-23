@@ -76,7 +76,7 @@ a:hover {
     padding-top: 15vh;
     color: #182955;
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(25px);
     transition: all 1s ease-out;
 }
 .brandDiv.fade-in {
@@ -96,7 +96,7 @@ a:hover {
     padding-top: 15vh;
     color: #182955;
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(25px);
     transition: all 1s ease-out;
 }
 .portfolioDiv.fade-in {
@@ -121,7 +121,7 @@ a:hover {
 }
 @media only screen and (max-width: 550px) {
     #portfolioItem {
-      background: white;
+      background: #a5c4d8e3;
     }
 }
 .modal-body {
@@ -140,7 +140,7 @@ a:hover {
     padding-bottom: 15vh;
     color: #182955;
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(25px);
     transition: all 1s ease-out;
 }
 .contactDiv.fade-in {
@@ -160,7 +160,7 @@ a:hover {
 }
 @media only screen and (max-width: 550px) {
     #contactItem {
-      background: white;
+      background: #a5c4d8e3;
     }
 }
 .contactImg {
