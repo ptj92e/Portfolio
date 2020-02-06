@@ -53,10 +53,9 @@
                             JavaScript,
                             JQuery, Node.js, and responsive web design. Known as a patient problem-solver passionate
                             about a
-                            responsive user experience, and clear team communication. With a focus on user interface, I
-                            recently worked with a team of 3 to finish a job search website that is mobile responsive
-                            and
-                            pulls information from multiple APIs to present the user with jobs, a map of the city where
+                            responsive user experience, and clear team communication. With a focus on user interface,
+                            developed a job search website with a team of three that is mobile responsive and pulls
+                            information from multiple APIs to present the user with jobs, a map of the city where
                             the
                             job is located, and quality of life information for the city that is searched. Motivated to
                             utilize skills in the future as a part of a cohesive working unit developing quality
@@ -151,6 +150,22 @@
                         More</button>
                 </div>
             </div>
+            <div class="mx-2 mb-4 px-4 rounded" id="portfolioItem">
+                <img class="portfolioImg rounded mt-3 justify-content-center" src="assets/images/Employee-Database.jpg">
+                <h3 class="text-center">Employee Tracker</h3>
+                <div class="row justify-content-center pb-3">
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#employeeModal">See
+                        More</button>
+                </div>
+            </div>
+            <div class="mx-2 mb-4 px-4 rounded" id="portfolioItem">
+                <img class="portfolioImg rounded mt-3 justify-content-center" src="assets/images/BurgerLogger.png">
+                <h3 class="text-center">Burger Logger</h3>
+                <div class="row justify-content-center pb-3">
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#burgerModal">See
+                        More</button>
+                </div>
+            </div>
         </div>
     </div>
     <div class="modal fade" id="jobsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -161,7 +176,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
                 <div class="modal-body">
-                    <img class="col-12 rounded mt-3 justify-content-center" src="assets/images/Got-Jobs.png">
+                    <img class="modalImage col-12 rounded mt-3 justify-content-center" src="assets/images/Got-Jobs.png">
                     <h3 class="text-center">Got Jobs?</h3>
                     <p class="portfolioText">This is a webpage that I created with a team of 2 others. We used Bootstrap
                         as our visual framework and features a fully responsive design. We modified it with our own
@@ -186,7 +201,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
                 <div class="modal-body">
-                    <img class="col-12 rounded mt-3 justify-content-center" src="assets/images/Weather.png">
+                    <img class="modalImage col-12 rounded mt-3 justify-content-center" src="assets/images/Weather.png">
                     <h3 class="text-center">Weather Dashboard</h3>
                     <p class="portfolioText">I created this app as part of an assignment in my bootcamp. This app
                         utilizes Bootstrap for a fully responsive mobile experience. For functionality, I used JQuery to
@@ -212,7 +227,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
                 <div class="modal-body">
-                    <img class="col-12 rounded mt-3 justify-content-center" src="assets/images/Work.png">
+                    <img class="modalImage col-12 rounded mt-3 justify-content-center" src="assets/images/Work.png">
                     <h3 class="text-center">Work Day Scheduler</h3>
                     <p class="portfolioText">This app I created is great for keeping up with tasks during the workday.
                         This app uses the third party API Moment.js to keep track of the time of day. The color of the
@@ -237,7 +252,8 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
                 <div class="modal-body">
-                    <img class="col-12 rounded mt-3 justify-content-center" src="assets/images/RockHistoryQuiz.png">
+                    <img class="modalImage col-12 rounded mt-3 justify-content-center"
+                        src="assets/images/RockHistoryQuiz.png">
                     <h3 class="text-center">Rock History Quiz</h3>
                     <p class="portfolioText">I created a quiz that uses JQuery for the functionality. Once the quiz
                         button is clicked, the program hides elements and populates the first question and answer
@@ -264,7 +280,8 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
                 <div class="modal-body">
-                    <img class="col-12 rounded mt-3 justify-content-center" src="assets/images/Profile-Generator.png">
+                    <img class="modalImage col-12 rounded mt-3 justify-content-center"
+                        src="assets/images/Profile-Generator.png">
                     <h3 class="text-center">Profile Generator</h3>
                     <p class="portfolioText">This is a Node application that I created that uses Inquirer to prompt the
                         user for their GitHub username and favorite color. Once those two answers are given, a PDF of
@@ -287,9 +304,14 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
                 <div class="modal-body">
-                    <img class="col-12 rounded mt-3 justify-content-center" src="assets/images/Template_Engine.png">
+                    <img class="modalImage col-12 rounded mt-3 justify-content-center"
+                        src="assets/images/Template_Engine.png">
                     <h3 class="text-center">Template Engine</h3>
-                    <p class="portfolioText">This is another Node.js app that was an exercise in creating and modifying classes. The app prompts the user to add a new employee. From there, it asks the user to input the employee's name and email. If the employee is a manager, it asks for their office number. If the employee is an engineer, it asks for their GitHub username. If the employee is an intern, it asks for which school they went to.</p>
+                    <p class="portfolioText">This is another Node.js app that was an exercise in creating and modifying
+                        classes. The app prompts the user to add a new employee. From there, it asks the user to input
+                        the employee's name and email. If the employee is a manager, it asks for their office number. If
+                        the employee is an engineer, it asks for their GitHub username. If the employee is an intern, it
+                        asks for which school they went to.</p>
                     <div class="row justify-content-center">
                         <p>Please visit GitHub to see application.</p>
                     </div>
@@ -308,14 +330,63 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
                 <div class="modal-body">
-                    <img class="col-12 rounded mt-3 justify-content-center" src="assets/images/Note-Taker.png">
+                    <img class="modalImage col-12 rounded mt-3 justify-content-center"
+                        src="assets/images/Note-Taker.png">
                     <h3 class="text-center">Note Taker</h3>
-                    <p class="portfolioText">This app was an exercise in setting up an Express server to handle get, post, and delete requests. All of the front end of this app was provided, it was my job to create the back end. I have also deployed this application on Heroku and the link for the deployed version of this app can be found below.</p>
+                    <p class="portfolioText">This app was an exercise in setting up an Express server to handle get,
+                        post, and delete requests. All of the front end of this app was provided, it was my job to
+                        create the back end. I have also deployed this application on Heroku and the link for the
+                        deployed version of this app can be found below.</p>
                     <div class="row justify-content-center">
                         <p>GitHub: <a href="https://github.com/ptj92e/Note-Taker">Note Taker</a></p>
                     </div>
                     <div class="row justify-content-center">
                         <p>Deployed on Heroku: <a href="https://warm-refuge-36790.herokuapp.com/">Note Taker</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="employeeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <img class="modalImage col-12 rounded mt-3 justify-content-center"
+                        src="assets/images/Employee-Database.jpg">
+                    <h3 class="text-center">Employee Tracker</h3>
+                    <p class="portfolioText">This is a command line CRUD app I developed which allows the user to
+                        create, read, update, and delete information in a mySQL server. Through a series of inquirer
+                        prompts, the user can create new departments, roles, and employees for a business, read all the
+                        information for the company, update an employee's information, and even delete employees, roles,
+                        and departments.</p>
+                    <div class="row justify-content-center">
+                        <p>GitHub: <a href="https://github.com/ptj92e/Employee-Tracker">Employee Tracker</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="burgerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <img class="modalImage col-12 rounded mt-3 justify-content-center"
+                        src="assets/images/BurgerLogger.png">
+                    <h3 class="text-center">Burger Logger</h3>
+                    <p class="portfolioText">This is a full stack application utilizing Sequelize to manipulate a mySQL server to post and view a "burger wish list." This app uses a mySQL connection as well as Handlebars.js to populate the list of burgers on the screen. To be deployed on Heroku, this app also requires a connection to the JawsDB provided by Heroku. That connection is set using a config.json file that determines which connection is appropriate depending on the host.</p>
+                    <div class="row justify-content-center">
+                        <p>GitHub: <a href="https://github.com/ptj92e/Burger-Logger">Burger Logger</a></p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <p>Deployed on Heroku: <a href="https://immense-shelf-89251.herokuapp.com/">Burger Logger</a></p>
                     </div>
                 </div>
             </div>
