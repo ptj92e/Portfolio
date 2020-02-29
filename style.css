@@ -72,14 +72,14 @@ a:hover {
     padding: 10px;
     text-transform: uppercase;
 }
-.brandDiv {
+.summaryDiv {
     padding-top: 15vh;
     color: #182955;
     opacity: 0;
     transform: translateY(25px);
     transition: all 1s ease-out;
 }
-.brandDiv.fade-in {
+.summaryDiv.fade-in {
     opacity: 1;
     transform: translateY(0);
 }
@@ -88,9 +88,10 @@ a:hover {
     width: 25vh;
     box-shadow: 0 8px 6px -6px grey;
 }
-.brandText {
+.summaryText {
     font-family: 'Suravaram', serif;
     font-size: 3vh;
+    text-align: center;
 }
 .portfolioDiv {
     padding-top: 15vh;

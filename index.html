@@ -27,7 +27,7 @@
 <body>
     <header>
         <nav class="navbar justify-content-center">
-            <a class="nav-link linkText" href="#brandDiv" id="brandLink">Brand</a>
+            <a class="nav-link linkText" href="#summaryDiv" id="summaryLink">Summary</a>
             <a class="nav-link ml-2 mr-2 linkText" href="#portfolioDiv" id="portfolioLink">Portfolio</a>
             <a class="nav-link linkText" href="#contactDiv" id="contactLink">Contact</a>
         </nav>
@@ -39,30 +39,16 @@
         <div class="dark-cover">Full Stack Web Developer</div>
     </div>
     <br>
-    <div class="container brandDiv" id="brandDiv">
-        <h2 class="text-center mb-3">Brand Statement</h2>
+    <div class="container summaryDiv" id="summaryDiv">
+        <h2 class="text-center mb-3">Summary</h2>
         <div class="row">
             <div class="col-12 border-top-secondary">
                 <div class="col-12">
                     <div class="row justify-content-center">
-                        <p class="brandText">Full-Stack Web Developer utilizing a background in music
-                            education to provide a
-                            more well rounded addition to any team. Currently working on a certificate for Full Stack
-                            Web
-                            Development from the Vanderbilt University Coding Bootcamp with skills in HTML, CSS,
-                            JavaScript,
-                            JQuery, Node.js, and responsive web design. Known as a patient problem-solver passionate
-                            about a
-                            responsive user experience, and clear team communication. With a focus on user interface,
-                            developed a job search website with a team of three that is mobile responsive and pulls
-                            information from multiple APIs to present the user with jobs, a map of the city where
-                            the
-                            job is located, and quality of life information for the city that is searched. Motivated to
-                            utilize skills in the future as a part of a cohesive working unit developing quality
-                            websites
-                            and apps focused on user experience.</p>
-
-
+                        <p class="summaryText">Full-Stack Web Developer utilizing a background in music
+                            education to provide a more well rounded addition to any team. Currently working on a certificate for Full Stack
+                            Web Development from the Vanderbilt University Coding Bootcamp. Known as a patient problem-solver passionate
+                            about a responsive user experience, and clear team communication. Motivated to utilize skills in the future as a part of a cohesive working unit developing quality websites and apps focused on user experience.</p>
                     </div>
                 </div>
                 <div class="col-12">
@@ -81,6 +67,7 @@
                         <ul>
                             <li>Bootstrap</li>
                             <li>JQuery</li>
+                            <li>Handlebars.js</li>
                         </ul>
                     </div>
                 </div>
@@ -90,15 +77,23 @@
     <br>
     <div class="container portfolioDiv" id="portfolioDiv">
         <h2 class="text-center mb-3">Portfolio</h2>
-        <p class="portfolioText">Here are some of the projects I have worked on. So far, on the front end, the projects
-            utilize HTML, CSS, Bootstrap, JavaScript, JQuery, and making API calls. On the back end, I have only used
-            Node.js and Express in some projects, and I have goals to add more languages in the future.</p>
+        <p class="portfolioText">Here are some of the projects I have worked on. On the front end, the projects
+            utilize HTML, CSS, Bootstrap, JavaScript, JQuery, and REST APIs. On the back end, I have only used
+            Node.js and Express in some projects. I also use mySQL and noSQl databases to store information on some of these apps.</p>
         <div class="js-flickity" data-flickity='{"wrapAround" : "true", "groupCells" : "true"}'>
             <div class="mx-2 mb-4 px-4 rounded" id="portfolioItem">
                 <img class="portfolioImg rounded mt-3 justify-content-center" src="assets/images/Got-Jobs.png">
                 <h3 class="text-center">Got Jobs?</h3>
                 <div class="row justify-content-center pb-3">
                     <button type="button" class="btn btn-light" data-toggle="modal" data-target="#jobsModal">See
+                        More</button>
+                </div>
+            </div>
+            <div class="mx-2 mb-4 px-4 rounded" id="portfolioItem">
+                <img class="portfolioImg rounded mt-3 justify-content-center" src="assets/images/Maze.png">
+                <h3 class="text-center">The Ender Maze</h3>
+                <div class="row justify-content-center pb-3">
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#mazeModal">See
                         More</button>
                 </div>
             </div>
@@ -172,6 +167,27 @@
                     </div>
                     <div class="row justify-content-center">
                         <p>GitHub: <a href="https://github.com/ptj92e/GotJobs">Got Jobs?</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="mazeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <img class="modalImage col-12 rounded mt-3 justify-content-center" src="assets/images/Maze.png">
+                    <h3 class="text-center">The Ender Maze</h3>
+                    <p class="portfolioText">The Ender Maze is a game developed using Handlebars.js and the ES6 class creation system to create characters and save them to a mySQL database. We used Sequelize as our ORM to hanle the connections to the database. For functionality and further development, we intend on switching the game over from Handlebars.js to React.js.</p>
+                    <div class="row justify-content-center">
+                        <p>Deployed: <a href="https://arcane-plains-16309.herokuapp.com/">The Ender Maze</a></p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <p>GitHub: <a href="https://github.com/ptj92e/The-Ender-Maze">The Ender Maze</a></p>
                     </div>
                 </div>
             </div>
@@ -312,12 +328,17 @@
                     <img class="modalImage col-12 rounded mt-3 justify-content-center"
                         src="assets/images/BurgerLogger.png">
                     <h3 class="text-center">Burger Logger</h3>
-                    <p class="portfolioText">This is a full stack application utilizing Sequelize to manipulate a mySQL server to post and view a "burger wish list." This app uses a mySQL connection as well as Handlebars.js to populate the list of burgers on the screen. To be deployed on Heroku, this app also requires a connection to the JawsDB provided by Heroku. That connection is set using a config.json file that determines which connection is appropriate depending on the host.</p>
+                    <p class="portfolioText">This is a full stack application utilizing Sequelize to manipulate a mySQL
+                        server to post and view a "burger wish list." This app uses a mySQL connection as well as
+                        Handlebars.js to populate the list of burgers on the screen. To be deployed on Heroku, this app
+                        also requires a connection to the JawsDB provided by Heroku. That connection is set using a
+                        config.json file that determines which connection is appropriate depending on the host.</p>
                     <div class="row justify-content-center">
                         <p>GitHub: <a href="https://github.com/ptj92e/Burger-Logger">Burger Logger</a></p>
                     </div>
                     <div class="row justify-content-center">
-                        <p>Deployed on Heroku: <a href="https://immense-shelf-89251.herokuapp.com/">Burger Logger</a></p>
+                        <p>Deployed on Heroku: <a href="https://immense-shelf-89251.herokuapp.com/">Burger Logger</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -334,7 +355,8 @@
                     <h5>Click below to view my resume.</h5>
                 </div>
                 <div class="row justify-content-center">
-                    <a href="https://docs.google.com/document/d/1w986VtOVbPJq7OfwunDdB7Phe3j6Xeg22XjMgksMvZw/edit?usp=sharing">Resume</a>
+                    <a
+                        href="https://docs.google.com/document/d/1w986VtOVbPJq7OfwunDdB7Phe3j6Xeg22XjMgksMvZw/edit?usp=sharing">Resume</a>
                 </div>
             </div>
             <div class="mx-2 mb-4 px-4 rounded" id="contactItem">
